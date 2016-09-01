@@ -1,0 +1,37 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.impacta.android100h">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+
+        <service android:name=".lab08.io.NotaHojeService"
+            android:exported="false" />
+        <receiver android:name=".lab08.io.NotaHojeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_ PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.BOOT_ COMPLETED" />
+                <category android:name="android.intent.category. DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".lab01.app.controller.SplashActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".lab01.app.controller.MainActivity"></activity>
+        <activity android:name=".lab02.app.controller.MegaSenaActivity"/>
+        <activity android:name=".lab03.app.controller.GorjetaActivity"/>
+        <activity android:name=".lab04.app.controller.IntentActivity" />
+        <activity android:name=".lab08.app.controller.NotaDrawerActivity"/>
+        <activity android:name=".lab08.app.controller.NotaActivity" android:screenOrientation="portrait" />
+        
+
+    </application>
+</manifest>

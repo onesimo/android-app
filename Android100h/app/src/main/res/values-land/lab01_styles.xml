@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Lab01.Title.Vertical.Image"
+        parent="AppTheme">
+        <item name="android:layout_width">200sp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <integer name="lab01_handler_delay">1000</integer>
+    <dimen name="lab01_largura_logo">250sp</dimen>
+</resources>
